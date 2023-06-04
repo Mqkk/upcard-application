@@ -1,0 +1,40 @@
+// база
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// небольшие компоненты
+@import "./components/btn";
+@import "./components/text-styles";
+@import "./components/form";
+@import "./components/select";
+@import "./components/input-file";
+@import "./components/radio-btn";
+@import "./components/form-radio";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/burger";
+@import "./components/nav";
+@import "./components/btns-panel";
+@import "./components/list-menu";
+@import "./components/data-form";
+@import "./components/section-main";
+@import "./components/list-of-cards";
+@import "./components/window-settings";
+@import "./components/loader";
+@import "./components/message";
+@import "./components/section-start";
+@import "./components/section-confirmation";
+@import "./components/section-qr";
+@import "./components/section-edit";
+@import "./components/section-settings";
+@import "./components/section-selection-confirmation";
+@import "./components/section-social";
+@import "./components/section-personal";
+@import "./components/section-company";
+@import "./components/section-appearance";
+@import "./components/section-subscription";
+@import "./components/section-portfolio-item";
+@import "./components/section-calendar";

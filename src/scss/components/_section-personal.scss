@@ -1,0 +1,13 @@
+.personal {
+  grid-column: 10 span;
+  width: 100%;
+
+  &__descr {
+    margin-bottom: 40px;
+    color: var(--gray-color);
+
+    @include mobile {
+      margin-bottom: 30px;
+    }
+  }
+}

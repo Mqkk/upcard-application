@@ -1,0 +1,131 @@
+/* stylelint-disable order/properties-order */
+.subscription {
+  grid-column-start: 4;
+  /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+  grid-column-end: 10;
+  width: 100%;
+  max-width: 610px;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.sub-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  padding: 20px;
+  background: var(--bg-glass-color);
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    margin-right: 10px;
+
+    i {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      font-size: 22px;
+
+      @include mobile {
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+      }
+    }
+
+    span {
+      line-height: 130%;
+    }
+  }
+
+  &__value {
+    display: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: var(--orange-color);
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    text-decoration-line: underline;
+    color: var(--light-color);
+
+    &:hover {
+      color: var(--orange-color);
+    }
+
+    @include mobile {
+      font-size: 12px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: var(--gray-color);
+  }
+
+  &__bottom {
+    text-align: right;
+  }
+
+  &__btn {
+    width: auto;
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &--active {
+    border: 1px solid var(--orange-color);
+
+    .sub-item__value {
+      display: block;
+    }
+
+    .sub-item__link {
+      display: none;
+    }
+
+    .sub-item__title {
+      color: var(--orange-color);
+
+      span {
+        color: var(--orange-color);
+      }
+    }
+  }
+
+  @include mobile {
+    gap: 20px;
+  }
+}

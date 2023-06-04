@@ -1,0 +1,31 @@
+<section class="edit">
+  <div class="edit__container">
+    <h2 class="visually-hidden">Меню Настройки календаря</h2>
+    <ul class="list-reset list-menu">
+      <li class="list-menu__item">
+        <div class="form-radio form-radio--checkbox">
+          <input class="input" id="checkbox-window-setting" type="checkbox" name="windows-in-calendar-days" value="1">
+          <label class="label" for="checkbox-window-setting">Окна в днях</label>
+        </div>
+      </li>
+      <li class="list-menu__item">
+        <!-- блок настройки окон -->
+        <div class="window-settings" id="window-settings">
+          <ul class="list-reset window-settings__list">
+            <!-- итем добавления окна -->
+            <li class="window-settings__item window-item">
+              <label class="label window-item__label">
+                <input type="time" name="Время" class="input-reset input window-item__input" placeholder="Время">
+                <span>Выбрать время</span>
+              </label>
+              <button class="btn-reset btn">Удалить окно</button>
+            </li>
+            <li class="window-settings__item">
+              <button class="btn-reset btn btn--med list-menu__btn">Добавить окно</button>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

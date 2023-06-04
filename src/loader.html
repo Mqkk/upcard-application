@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header-start.html')
+    <main class="main">
+      <div class="main__container container loader__container">
+        <div class="loader__block">
+          <div class="loader">Loading...</div>
+        </div>
+        <h1 class="title-h2 loader__title">Идет загрузка</h1>
+      </div>
+    </main>
+
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</body>
+
+</html>

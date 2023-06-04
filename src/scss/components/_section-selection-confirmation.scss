@@ -1,0 +1,8 @@
+/* stylelint-disable order/properties-order */
+.selection-confirmation {
+  grid-column-start: 4;
+  /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+  grid-column-end: 10;
+  width: 100%;
+  max-width: 610px;
+}

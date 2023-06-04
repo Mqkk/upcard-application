@@ -1,0 +1,28 @@
+.confirmation {
+  grid-column: 7 span;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    @include high-desktop {
+      max-width: 715px;
+    }
+  }
+}
+
+.confirmation-form {
+  display: flex;
+  flex-direction: column;
+
+  &__btns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    @include small-tablet {
+      grid-template-columns: auto;
+    }
+  }
+}

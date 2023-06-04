@@ -1,0 +1,38 @@
+.btns-panel {
+  display: flex;
+  gap: 30px;
+
+  &__descr {
+    margin: 0;
+    max-width: 690px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: 0.02em;
+    color: var(--gray-color);
+  }
+
+  &--row {
+    flex-direction: row;
+  }
+
+  &--form {
+    @include mobile {
+      gap: 30px;
+    }
+  }
+
+  @include small-tablet {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 30px 20px;
+    width: 100%;
+    background-color: #222;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    gap: 25px;
+  }
+}

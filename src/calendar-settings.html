@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html', {
+    "title": "Настройка календаря",
+    })
+    <main class="main">
+      <div class="main__container container" data-aos="zoom-in">
+        @include('partials/section-calendar-settings.html')
+      </div>
+    </main>
+
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- скрипт работы панели окон -->
+  <script>
+    const checkboxWindow = document.getElementById("checkbox-window-setting");
+    const panelWindow = document.getElementById("window-settings");
+
+    window.onload = function () {
+      checkboxWindow.onclick = function () {
+        if (checkboxWindow.checked) {
+          panelWindow.style.opacity = "1";
+          panelWindow.style.pointerEvents = "auto";
+        } else {
+          panelWindow.style.opacity = "0.4";
+          panelWindow.style.pointerEvents = "none";
+        }
+      };
+    }
+  </script>
+</body>
+
+</html>
